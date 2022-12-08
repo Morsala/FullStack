@@ -1,0 +1,146 @@
+.features {
+  border-top: 3px groove rgb(255, 255, 255);
+
+  &_1, &_2, &_3 {
+    .flex(row, space-between, center);
+
+    @media @media_tablet{
+      .flex(column, stretch, center);
+    }
+  }
+}
+
+.img_border_shadow {
+  box-shadow: 0 0 30px rgb(148, 148, 148);
+
+  @media @media_tablet{
+    width: 400px;
+    margin: 20px 0;
+  }
+}
+
+.div_features {
+  min-height: 550px;
+  .flex(row, stretch, center);
+}
+
+.feature_gray, .pricing {
+  background-color: @color_white;
+}
+
+.div_feature{
+  &_1{
+    flex-basis: 100px;
+
+    &>button {
+      .btn(100px, 100px, #fff, rgb(51, 51, 51));
+      border: 1px solid rgb(199, 199, 199);
+    }
+  
+    &>.select {
+      background-color: @color_orange;
+      border-radius: 5px 5px 0 0;
+  
+      &_2 {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  
+    @media @media_tablet{
+      text-align: center;
+    }
+  }
+
+  &_2{
+    .flex(row, space-between);
+
+    flex-basis: 75%;
+  
+    &_cont{
+      flex-basis: 45%;
+  
+      &>h4 {
+        margin: 0;
+        width: 100%;
+      }
+    
+      &_p {
+        margin: 50px auto;
+      }
+    
+      &>button {
+        .btn(120px, 40px, #fff, @color_orange);
+        border: none;
+        border-radius: 5px;
+        font-family: 'OpenSans';
+        font-weight: bold;
+        font-size: 15px;
+
+        @media @media_phone{
+          .btn(200px, 50px, #fff, @color_orange);
+          font-size: 18px;
+        }
+      }
+
+      @media @media_phone{
+        .flex(column, stretch, center);
+      }
+    }
+
+    &_img{
+      @media @media_phone{
+        width: 310px;
+        margin: 20px auto;
+      }
+    }
+    
+    @media @media_phone{
+      .flex(column);
+    }
+  }
+
+  &_1, &_2{
+    @media @media_tablet{
+      margin: 20px 0;
+    }
+  }
+}
+
+.cont_feature_2 {
+  flex-basis: 45%;
+  .flex(column, center);
+}
+
+.titles_feature_2 {
+  .flex(row, space-between);
+  margin: 20px auto;
+}
+
+.div_title {
+  &_1 {
+    .flex(row, left, center);
+  }
+
+  &_2 {
+    flex-basis: 85%;
+
+    &>span {
+      font-family: 'OpenSans';
+      font-weight: bold;
+      color: black;
+    }
+
+    &>p {
+      margin-top: 5px;
+    }
+  }
+}
+
+.title_font>i {
+  font-size: 40px;
+  color: @color_orange;
+}
+
+.cont_features_3 {
+  flex-basis: 45%;
+}

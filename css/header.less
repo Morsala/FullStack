@@ -1,0 +1,164 @@
+header {
+  background: url('../img/bgaxit.png') no-repeat center bottom fixed;
+  background-size: cover;
+  min-height: 700px;
+  .flex(column);
+  color: white;
+}
+
+.color {
+  &_white {
+    color: white;
+  }
+
+  &_div {
+    background-color: white;
+  }
+}
+
+.br_div {
+  .btn(62px, 2px);
+  margin: auto;
+  background-color: @color_orange;
+}
+
+.left_div {
+  margin-left: 0;
+}
+
+.main {
+  .flex(row, space-between, center);
+  width: 80%;
+  margin: auto;
+
+  @media @media_phone {
+    .flex(column);
+    text-align: center;
+  }
+
+  &_logo {
+    @media @media_phone {
+      margin-top: 10px;
+    }
+  }
+  
+  @media @media_phone2{
+    width: 100%;
+  }
+}
+
+.nav_main {
+  .flex(row, space-between);
+  flex-basis: 40%;
+
+  @media @media_phone {
+    flex-basis: 70%;
+  }
+  
+  @media @media_phone2{
+    .flex(row, space-around);
+  }
+}
+
+.a_main {
+  text-decoration: none;
+  font-family: 'OpenSans';
+  font-size: @f14px;
+  color: white;
+  line-height: 60px;
+  border-bottom: 5px solid black;
+
+  @media @media_phone {
+    font-size: 20px;
+  }
+}
+
+nav {
+  background-color: black;
+}
+
+.cont_header {
+  .flex(row, space-between);
+
+  &_1 {
+    .flex(column, space-between);
+    flex-basis: 50%;
+
+    &>p {
+      margin: 30px auto;
+    }
+
+    &>.left_div {
+      @media @media_tablet {
+        margin-left: auto;
+      }
+    }
+
+    @media @media_tablet {
+      .flex(column, space-between, center);
+    }
+  }
+
+  &_2 {
+    align-content: center;
+    width: 350px;
+  }
+
+  @media @media_tablet {
+    .flex(column, stretch, center);
+    text-align: center;
+  }
+
+  &_1,
+  &_2 {
+    @media @media_tablet {
+      margin: 30px 0;
+    }
+  }
+}
+
+.form_header {
+  width: 100%;
+  height: auto;
+
+  .flex(column);
+
+  &_p,
+  &_input {
+    width: 100%;
+  }
+
+  &_p {
+    background-color: rgb(245, 245, 245);
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px 5px 0 0;
+
+    &>span {
+      color: @color_orange;
+    }
+  }
+
+  &_input {
+    background-color: white;
+    .flex(column);
+
+    &>input {
+      height: 30px;
+      width: 80%;
+      margin: 26px auto;
+      font-family: 'OpenSans';
+      font-size: @f14px;
+      border: none;
+      border-bottom: 1px solid rgb(214, 214, 214);
+    }
+  }
+
+  &_button {
+    .btn(auto, 50px, #fff, @color_orange);
+    font-size: 15px;
+    border: none;
+    border-radius: 0 0 5px 5px;
+  }
+}

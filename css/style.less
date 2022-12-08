@@ -1,0 +1,73 @@
+@import url('fonts');
+@import url('vars');
+@import url('mixins');
+@import url('hi');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans';
+  color: rgb(134, 135, 139);
+  font-size: @f14px;
+}
+
+.color_white {
+  color: white;
+}
+
+.main, .cont_header, .cont_brandBar, .features_1, .features_2, .features_3,
+.cont_process, .cont_pricing, .cont_testimonials, .cont_custom, .cont_contacts, .cont_footer {
+  width: 80%;
+  margin: auto;
+}
+
+// header
+@import url('header');
+
+.button_image {
+  .btn(140px, 40px, white, rgba(255, 255, 255, 0));
+  border: 2px groove white;
+  transition: 0.5s;
+
+  @media @media_phone{
+    .btn(200px, 50px, white, rgba(255, 255, 255, 0));
+    font-size: 18px;
+  }
+}
+
+button {
+  height: 35px;
+  font-family: 'OpenSans';
+  font-weight: bold;
+}
+
+.fontawesome {
+  font-size: 40px;
+  color: rgb(204, 204, 204);
+}
+
+// contBrandBar
+@import url('contBrandBar');
+
+
+// features
+@import url('features');
+
+// process
+@import url('process');
+
+// pricing
+@import url('pricing');
+
+// users
+@import url('users');
+
+// customs
+@import url('customs');
+
+// contacts
+@import url('contacts');
+
+// footer 
+@import url('footer');

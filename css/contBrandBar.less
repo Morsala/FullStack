@@ -1,0 +1,24 @@
+.cont_brandBar {
+  .flex(row, space-between, center);
+  margin: 10px auto;
+
+  @media @media_phone{
+    .flex(column);
+  }
+}
+
+.div_cont_brandBar{
+  &_1{
+    flex-basis: 40%;
+
+    &>h3,
+    &>p {
+      margin: 5px auto;
+    }
+  }
+
+  &_2{
+    .flex(row, space-between);
+    flex-basis: 50%;
+  }
+}

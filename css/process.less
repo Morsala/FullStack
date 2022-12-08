@@ -1,0 +1,27 @@
+.header_block {
+  .flex(column)
+}
+
+.header_block * {
+  margin: 12px auto;
+}
+
+.cont_process {
+  .flex(column, stretch, center);
+  text-align: center;
+  margin: 40px auto;
+}
+
+.div_process {
+  .flex(row, space-between);
+  margin: 40px 0;
+
+  @media @media_phone{
+    .flex(column, stretch, center);
+    width: 70%;
+  }
+}
+
+.div_arlicle_process {
+  flex-basis: 30%;
+}

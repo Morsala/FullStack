@@ -1,0 +1,50 @@
+.cont_contacts {
+  .flex(column, stretch, center);
+  padding: 70px 0;
+
+  &>button {
+    .btn(140px, 40px, #fff, @color_orange);
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.form_contacts {
+  .flex(row, space-between);
+  width: 100%;
+  margin: 50px 0;
+}
+
+.form_contacts * {
+  font-family: 'OpenSans';
+  font-size: @f14px;
+  border: none;
+}
+
+.div_contact {
+  &_1 {
+    .flex(column);
+    flex-basis: 45%;
+
+    & * {
+      border-bottom: 1px solid rgb(214, 214, 214);
+      height: 40px;
+      margin: 10px 0 5px;
+    }
+  }
+
+  &_2 {
+    .flex(column, end);
+    flex-basis: 45%;
+    padding: 5px 0;
+
+    & * {
+      border-bottom: 1px solid rgb(214, 214, 214);
+      height: 135px;
+    }
+  }
+}
+
+.contact_1 {
+  margin: 0;
+}

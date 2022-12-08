@@ -1,0 +1,42 @@
+.cont_testimonials {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.list_customs {
+  .flex(row, space-between);
+  margin-top: 50px;
+
+  @media @media_tablet{
+    .flex(row, center);
+    flex-wrap: wrap;
+  }
+
+  &_dialogs{
+    margin: auto 15px;
+  }
+}
+
+.dialog_custom {
+  background-color: @color_white;
+  width: 250px;
+  padding: 20px 10px;
+  text-align: left;
+  font-style: italic;
+}
+
+.div_user {
+  .flex(row);
+  margin: 20px auto;
+
+  &_info {
+    .flex(column, center);
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+
+.user_info {
+  margin: 0;
+}
+
